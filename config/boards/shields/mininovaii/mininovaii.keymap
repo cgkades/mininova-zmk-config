@@ -13,7 +13,7 @@
 #define RAISE    1
 #define LOWER    2
 #define BOTH     3
-#define SYMB     4
+
 
 // -----------------------------------
 // | TAB:TAB |    |    |    |    |   -:-  =:=  <:<   |   (< = bksp)
@@ -86,9 +86,9 @@
         default_layer {
             bindings = <
     &kp Q      &kp W       &kp E      &kp R           &kp T      &kp Y     &kp U   &kp I     &kp O     &kp P
-    &lh_pht LCTRL A      &kp S       &kp D      &kp F           &kp G      &kp H     &kp J   &kp K     &kp L
-    &lh_pht LSHIFT Z     &kp X       &kp C      &kp V           &kp B      &kp N     &kp M   &kp DOT
-    &kp LGUI &lt LOWER BSPC  &kp SPACE  &lt RAISE ENTER &mo SYMB
+    &kp A      &kp S       &kp D      &kp F           &kp G      &kp H     &kp J   &kp K     &kp L
+    &kp Z     &kp X       &kp C      &kp V           &kp B      &kp N     &kp M   &kp DOT
+    &kp LGUI &lt LOWER BSPC  &kp SPACE  &lt RAISE ENTER &mo BOTH
             >;
         };
 
@@ -111,15 +111,6 @@
         };
 
         both_layer {
-            bindings = <
-    &bt BT_CLR   &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &trans  &trans  &trans  &trans &trans &kp DEL
-    &trans       &trans       &trans       &trans       &trans  &trans  &trans  &trans &kp AT
-    &trans       &trans       &trans       &trans       &trans  &trans  &trans  &trans
-    &out OUT_USB &trans       &out OUT_TOG &trans       &out OUT_BLE
-            >;
-        };
-
-        symb_layer {
             bindings = <
     &bt BT_CLR   &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &trans  &trans  &trans  &trans &trans &kp DEL
     &trans       &trans       &trans       &trans       &trans  &trans  &trans  &trans &kp AT
