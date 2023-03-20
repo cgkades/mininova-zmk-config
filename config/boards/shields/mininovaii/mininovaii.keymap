@@ -78,7 +78,7 @@
 
         raise_layer {
             bindings = <
-    &kp EXCL    &kp AT &kp POUND    &kp DLLR     &kp PRCNT    &kp CARET &kp AMPS    &kp STAR    &RPAR     &kp LPAR
+    &kp TAB    &trans    &trans     &trans     &trans     &trans  &trans    &trans    &trans    &kp BSPC
     &kp ESC    &trans    &trans     &kp F5     &trans     &trans  &kp F12   &trans    &kp SEMI
     &trans     &trans    &trans     &kp PG_UP  &kp PG_DN  &trans  &trans    &kp FSLH
     &kp LCTRL  &mo BOTH  &kp HOME   &mo BOTH   &trans
